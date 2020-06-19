@@ -38,9 +38,15 @@ noremap <leader>n :call ToggleNetrw()<CR>
 " Fix splits size (make them equal) when vim window is resized
 autocmd VimResized * execute "normal! \<c-w>="
 
-" Move between splits
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+
+
+" Automatic, language-dependent indentation, syntax coloring and other
+" functionality.
+"
+" Must come *after* the `:packadd!` calls above otherwise the contents of
+" package "ftdetect" directories won't be evaluated.
+
+filetype indent plugin on
+syntax on
+
 
