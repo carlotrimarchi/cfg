@@ -9,6 +9,9 @@ let g:netrw_altv = 1
 "let g:netrw-v = 1
 let g:netrw_winsize = 25
 
+noremap <leader>n :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right" " open NERDTree on the right side
+
 
 " script to toggle netrw window, mapped to <leader>n
 let g:NetrwIsOpen=0
@@ -29,8 +32,7 @@ function! ToggleNetrw()
     endif
 endfunction
 
-" Add your own mapping. For example:
-noremap <leader>n :call ToggleNetrw()<CR>
+" noremap <leader>n :call ToggleNetrw()<CR>
 
 
 " Autocmds
