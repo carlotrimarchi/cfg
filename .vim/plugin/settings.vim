@@ -90,6 +90,9 @@ set nojoinspaces                      " don't autoinsert two spaces after '.', '
 set number                            " show line numbers in gutter
 
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
+
+set shortmess+=I                      " no splash screen
+
 set sidescrolloff=3                   " same as scolloff, but for columns
 
 if exists('+relativenumber')

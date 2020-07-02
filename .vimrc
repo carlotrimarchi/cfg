@@ -51,4 +51,5 @@ autocmd VimResized * execute "normal! \<c-w>="
 filetype indent plugin on
 syntax on
 
-
+" If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
