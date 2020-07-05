@@ -4,3 +4,6 @@
 [submodule ".vim/pack/vendor/opt/vimwiki"]
 	path = .vim/pack/vendor/opt/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule ".vim/pack/vendor/opt/vim-markdown"]
+	path = .vim/pack/vendor/opt/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
