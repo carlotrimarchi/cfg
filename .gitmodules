@@ -7,3 +7,6 @@
 [submodule ".vim/pack/vendor/opt/vim-markdown"]
 	path = .vim/pack/vendor/opt/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/pack/vendor/opt/terminus"]
+	path = .vim/pack/vendor/opt/terminus
+	url = https://github.com/wincent/terminus.git
