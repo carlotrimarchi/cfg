@@ -53,3 +53,9 @@ syntax on
 
 " If installed using Homebrew
 set rtp+=/usr/local/opt/fzf
+
+" VimWiki
+
+let g:vimwiki_list = [
+      \ {'path': '~/Dropbox/obsidian/', 'syntax': 'markdown', 'ext': '.md'}
+                \ ]

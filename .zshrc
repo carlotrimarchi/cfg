@@ -113,7 +113,8 @@ export RPROMPT="\${vcs_info_msg_0_} %F{blue}%~%f"
 
 
 
-
+# Make fzf to include also hidden files
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 
 
 
