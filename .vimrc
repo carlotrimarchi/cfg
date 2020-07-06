@@ -57,6 +57,7 @@ let g:vimwiki_list = [
 
 if &loadplugins
   if has('packages')
+    packadd! ale
     packadd! base16-vim
 
     packadd! terminus
@@ -71,6 +72,7 @@ if &loadplugins
     "packadd! vim-json
     "packadd! vim-jsx
     "packadd! vim-markdown
+    packadd! php
     "packadd! vim-projectionist
     "packadd! vim-repeat
     "packadd! vim-signature
