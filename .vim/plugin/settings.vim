@@ -116,5 +116,17 @@ endif
 
 set tabstop=2                         " spaces per tab
 
+if has('termguicolors')
+  set termguicolors                   " use guifg/guibg instead of ctermfg/ctermbg in terminal
+endif
 
 set textwidth=80                      " automatically hard wrap at 80 columns
+
+
+
+
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END

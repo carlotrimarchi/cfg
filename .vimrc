@@ -1,4 +1,6 @@
-" starting from scratch
+if v:progname == 'vi'
+  set noloadplugins
+endif
 
 let mapleader = "\<Space>"
 
@@ -42,14 +44,6 @@ autocmd VimResized * execute "normal! \<c-w>="
 
 
 
-" Automatic, language-dependent indentation, syntax coloring and other
-" functionality.
-"
-" Must come *after* the `:packadd!` calls above otherwise the contents of
-" package "ftdetect" directories won't be evaluated.
-
-filetype indent plugin on
-syntax on
 
 " If installed using Homebrew
 set rtp+=/usr/local/opt/fzf
@@ -59,3 +53,41 @@ set rtp+=/usr/local/opt/fzf
 let g:vimwiki_list = [
       \ {'path': '~/Dropbox/obsidian/', 'syntax': 'markdown', 'ext': '.md'}
                 \ ]
+
+
+if &loadplugins
+  if has('packages')
+    packadd! base16-vim
+
+    packadd! terminus
+    "packadd! typescript-vim
+    "packadd! vim-clipper
+    "packadd! vim-dirvish
+    "packadd! vim-docvim
+    "packadd! vim-easydir
+    "packadd! vim-fugitive
+    "packadd! vim-git
+    "packadd! vim-javascript
+    "packadd! vim-json
+    "packadd! vim-jsx
+    "packadd! vim-markdown
+    "packadd! vim-projectionist
+    "packadd! vim-repeat
+    "packadd! vim-signature
+    "packadd! vim-surround
+    "packadd! vim-zsh
+  else
+    source $HOME/.vim/pack/bundle/opt/vim-pathogen/autoload/pathogen.vim
+    call pathogen#infect('pack/bundle/opt/{}')
+  endif
+endif
+
+
+" Automatic, language-dependent indentation, syntax coloring and other
+" functionality.
+"
+" Must come *after* the `:packadd!` calls above otherwise the contents of
+" package "ftdetect" directories won't be evaluated.
+
+filetype indent plugin on
+syntax on
