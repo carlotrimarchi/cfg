@@ -266,3 +266,14 @@ function () {
     color default-dark
   fi
 }
+
+#
+# Completion
+#
+
+autoload -U compinit
+compinit -u
+
+zstyle ':completion:*' matcher-list '' '+m:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}' '+m:{_-}={-_}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+zstyle ':completion:*' menu select

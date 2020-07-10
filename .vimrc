@@ -77,7 +77,7 @@ if &loadplugins
     "packadd! vim-repeat
     "packadd! vim-signature
     "packadd! vim-surround
-    "packadd! vim-zsh
+    packadd! vim-zsh
   else
     source $HOME/.vim/pack/bundle/opt/vim-pathogen/autoload/pathogen.vim
     call pathogen#infect('pack/bundle/opt/{}')
