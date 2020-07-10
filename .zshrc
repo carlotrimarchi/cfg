@@ -271,7 +271,6 @@ function () {
 # Completion
 #
 
-
 autoload -U compinit
 compinit -u
 

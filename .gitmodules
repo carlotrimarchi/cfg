@@ -22,3 +22,9 @@
 [submodule ".vim/pack/vendor/opt/ale"]
 	path = .vim/pack/vendor/opt/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "vim-zsh"]
+	path = vim-zsh
+	url = https://github.com/chrisbra/vim-zsh.git
+[submodule ".vim/pack/vendor/opt/vim-zsh"]
+	path = .vim/pack/vendor/opt/vim-zsh
+	url = https://github.com/chrisbra/vim-zsh.git
